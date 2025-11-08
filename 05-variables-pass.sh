@@ -1,2 +1,3 @@
 #!/bin/bash
-echo"please enter pin num"
+echo "please enter pin num" 
+

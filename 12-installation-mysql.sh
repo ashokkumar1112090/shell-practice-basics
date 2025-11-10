@@ -12,6 +12,7 @@ dnf install mysql -y
 
 if  [ $? -ne 0 ]; then
   echo " ERROR: INSTALLING MYSQL IS FAILURE"
+  exit 1
   #again stressing only at error msg give exit code
 else
   echo "installing mysql is success" #only at eroor place give exit code 

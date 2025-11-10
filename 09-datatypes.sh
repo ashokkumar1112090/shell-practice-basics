@@ -11,7 +11,8 @@ echo " sum is : $SUM"
  
  LEADERS=("trump" "modi" "cbn" "ysjagan")
  echo "all leaders ${LEADERS[@]}"
-#size of array 4 max index=3  if you entered 4 in prog.lang shows error but in shell script idt doesnt show error
+#size of array 4 max index=3  if you entered 4 in prog.lang shows error 
+#but in shell script idt doesnt show error
  echo "first leader: ${LEADERS[0]}
  echo "first leader: ${LEADERS[1]}
  echo "first leader: ${LEADERS[2]}

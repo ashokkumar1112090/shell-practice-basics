@@ -8,3 +8,6 @@ SUM=$(($NUMBER1+$NUMBER2+$NAME))
 #dont shows error because here name is not taken as number
                                #not Number here so value is zero
 echo " sum is : $SUM"
+ 
+ LEADERS=("trump" "modi" "cbn" "ysjagan")
+ echo "all leaders ${LEADERS}[@]"

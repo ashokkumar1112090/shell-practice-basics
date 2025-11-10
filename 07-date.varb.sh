@@ -5,7 +5,7 @@
 
 START_TIME=$(date +%s)
 
-sleep 10 &
+sleep 10 # & if you give this it will give you error of script executed in 0 seconds
 
 END_TIME=$(date +%s)
 

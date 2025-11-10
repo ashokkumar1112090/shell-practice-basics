@@ -15,6 +15,7 @@ VALIDATE(){     #functions recieve inputs in form args like shell script
       exit 1
    else
       echo "installing $2 is success"
+   fi
 }
 dnf install mysql -y
 VALIDATE $? "mysql"  # here $1 is $? and $2 is mysql (refer function above the line how its given)

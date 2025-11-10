@@ -10,4 +10,4 @@ SUM=$(($NUMBER1+$NUMBER2+$NAME))
 echo " sum is : $SUM"
  
  LEADERS=("trump" "modi" "cbn" "ysjagan")
- echo "all leaders ${LEADERS}[@]"
+ echo "all leaders ${LEADERS[@]}"

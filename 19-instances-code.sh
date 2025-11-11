@@ -1,3 +1,5 @@
+#!/bin/bash
+#we dont get public ip immediately so wait for sometime or query seperately to get pub.ip
 "Groups": [],   
     "Instances": [
         {

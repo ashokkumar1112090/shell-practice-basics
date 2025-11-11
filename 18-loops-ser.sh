@@ -26,7 +26,7 @@ VALIDATE(){
    fi
 }
 
-for package in $@
+for package in $@  #only call in for loop this is static variable
 do 
   #check package already installed or not
   dnf list installed $package &>>$LOG_FILE

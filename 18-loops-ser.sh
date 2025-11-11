@@ -32,9 +32,10 @@ do
   dnf list installed $package &>>$LOG_FILE
   # if exit status is 0 then already installed if -ne 0 then instal
 
-if [ $? -ne 0 ]; then
-    dnf install $package -y &>>$LOG_FILE
-    VALIDATE $? "$package"
-else
-    echo -e "$package already existed $Y skipping $N" | tee -a $LOG_FILE  #printing one by echo into log
-fi
+   if [ $? -ne 0 ]; then
+      dnf install $package -y &>>$LOG_FILE
+      VALIDATE $? "$package"
+   else
+      echo -e "$package already existed $Y skipping $N" | tee -a $LOG_FILE  #printing one by echo into log
+   fi
+done

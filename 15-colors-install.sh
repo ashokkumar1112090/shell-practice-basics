@@ -20,7 +20,7 @@ VALIDATE(){
 }
 
 dnf list installed mysql  #installed if it not found
-if [ $? ne 0 ]; then
+if [ $? -ne 0 ]; then
     dnf install mysql -y
     VALIDATE $? "mysql"
 else

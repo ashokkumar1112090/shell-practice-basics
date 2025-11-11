@@ -6,7 +6,7 @@ Y="\e[33m"
 N="\e[0m"
 LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( echo $0 | cut -d "." -f1 )
-LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" #means /var/log/shell-practice/16-logs.log
 
 mkdir -p $LOGS_FOLDER
 echo "script start executed at: $(date)" | tee -a $LOG_FILE  # echo printed one to APPEND in log file

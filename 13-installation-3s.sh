@@ -18,7 +18,8 @@ VALIDATE(){     #functions recieve inputs in form args like shell script
    fi
 }
 dnf install mysql -y
-VALIDATE $? "mysql"  # here $1 is $? and $2 is mysql (refer function above the line how its given)
+VALIDATE $? "mysql"  # here $1 is $? and $2 is mysql assume we are giving 2 args 
+#(refer function above the line how its given)
   #we have to call function to execute it
 
 #we are given function already so below code not needed

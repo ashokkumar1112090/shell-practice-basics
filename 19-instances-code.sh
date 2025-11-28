@@ -1,23 +1,25 @@
 #!/bin/bash
 #we dont get public ip immediately so wait for sometime or query seperately to get pub.ip
-"Groups": [],   
+aws ec2 run-instances --image-id ami-09c813fb71547fc4f --instance-type t3.micro --security-group-ids sg-08465db66b958e1af --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=test}]'
+{
+    "Groups": [],
     "Instances": [
         {
             "AmiLaunchIndex": 0,
             "ImageId": "ami-09c813fb71547fc4f",
-            "InstanceId": "i-0c3b7dd7a41d15281",
+            "InstanceId": "i-0cf7311b1735299dc",
             "InstanceType": "t3.micro",
-            "LaunchTime": "2025-11-11T11:09:51+00:00",
+            "LaunchTime": "2025-11-28T10:05:15+00:00",
             "Monitoring": {
                 "State": "disabled"
             },
             "Placement": {
-                "AvailabilityZone": "us-east-1c",
+                "AvailabilityZone": "us-east-1f",
                 "GroupName": "",
                 "Tenancy": "default"
             },
-            "PrivateDnsName": "ip-172-31-29-86.ec2.internal",
-            "PrivateIpAddress": "172.31.29.86",
+            "PrivateDnsName": "ip-172-31-78-140.ec2.internal",
+            "PrivateIpAddress": "172.31.78.140",
             "ProductCodes": [],
             "PublicDnsName": "",
             "State": {
@@ -25,19 +27,19 @@
                 "Name": "pending"
             },
             "StateTransitionReason": "",
-            "SubnetId": "subnet-04497a597c8ea65f1",
+            "SubnetId": "subnet-0a23af5b3aaa7e489",
             "VpcId": "vpc-036a0501e5bd2b1bf",
             "Architecture": "x86_64",
             "BlockDeviceMappings": [],
-            "ClientToken": "ffd1f507-66a6-4a97-a5c1-37333a63680c",
+            "ClientToken": "33b38cee-1786-4b9b-b34a-a81a1154753c",
             "EbsOptimized": false,
             "EnaSupport": true,
             "Hypervisor": "xen",
             "NetworkInterfaces": [
                 {
                     "Attachment": {
-                        "AttachTime": "2025-11-11T11:09:51+00:00",
-                        "AttachmentId": "eni-attach-0d6b0317bdcd522d3",
+                        "AttachTime": "2025-11-28T10:05:15+00:00",
+                        "AttachmentId": "eni-attach-0b6e44d9098ee762c",
                         "DeleteOnTermination": true,
                         "DeviceIndex": 0,
                         "Status": "attaching",
@@ -51,21 +53,21 @@
                         }
                     ],
                     "Ipv6Addresses": [],
-                    "MacAddress": "0a:ff:eb:e7:30:a9",
-                    "NetworkInterfaceId": "eni-0cd517851a46d2824",
+                    "MacAddress": "16:ff:fd:ec:7b:7f",
+                    "NetworkInterfaceId": "eni-088fe13e0263d700f",
                     "OwnerId": "466531995545",
-                    "PrivateDnsName": "ip-172-31-29-86.ec2.internal",
-                    "PrivateIpAddress": "172.31.29.86",   
+                    "PrivateDnsName": "ip-172-31-78-140.ec2.internal",
+                    "PrivateIpAddress": "172.31.78.140",
                     "PrivateIpAddresses": [
                         {
                             "Primary": true,
-                            "PrivateDnsName": "ip-172-31-29-86.ec2.internal",
-                            "PrivateIpAddress": "172.31.29.86"
+                            "PrivateDnsName": "ip-172-31-78-140.ec2.internal",
+                            "PrivateIpAddress": "172.31.78.140"
                         }
                     ],
                     "SourceDestCheck": true,
                     "Status": "in-use",
-                    "SubnetId": "subnet-04497a597c8ea65f1",
+                    "SubnetId": "subnet-0a23af5b3aaa7e489",
                     "VpcId": "vpc-036a0501e5bd2b1bf",
                     "InterfaceType": "interface"
                 }
@@ -121,5 +123,5 @@
         }
     ],
     "OwnerId": "466531995545",
-    "ReservationId": "r-01316e7790011f0da"
+    "ReservationId": "r-0b6874509a9a080fd"
 }

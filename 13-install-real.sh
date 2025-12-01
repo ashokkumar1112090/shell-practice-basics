@@ -6,7 +6,7 @@ if [ $USERID -ne 0 ]; then
   exit 1
 fi
 
-VALIDATE(){     
+VALIDATE(){      #script progress in msgs form and also to understand flow
     if  [ $1 -ne 0 ]; then
       echo " ERROR: INSTALLING $2 IS FAILURE"
       exit 1

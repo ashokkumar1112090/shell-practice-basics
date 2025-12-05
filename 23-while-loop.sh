@@ -22,4 +22,4 @@ while IFS= read -r line; do  #internal field seperator by default read line by l
     # if [[ "$line" == "specific_text" ]]; then
     #    echo "Found specific text!"
     # fi
-done < 20-script-1.sh
+done < 20-script-1.sh #file 1 less than sym if varb 3 less than sym check 22 file

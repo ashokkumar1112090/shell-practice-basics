@@ -18,7 +18,7 @@ if [ ! -d $SOURCE_DIR ]; then                #directory = d
     exit 1
 fi
 
-FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f -mtime +14)
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f -size +2k)
 
 
 #while loop bcz
@@ -28,4 +28,4 @@ do
     echo "Deleting the file: $filepath"
     rm -rf $filepath
     echo "Deleted the file: $filepath"
-done <<< $FILES_TO_DELETE
+done <<< $FILES_TO_DELETE #file 1 less than sym if varb 3 less than sym check 23file

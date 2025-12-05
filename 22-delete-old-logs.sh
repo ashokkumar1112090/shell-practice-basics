@@ -18,7 +18,7 @@ if [ ! -d $SOURCE_DIR ]; then                #directory = d
     exit 1
 fi
 
-FILES_TO_DELETE=$(sudo find $SOURCE_DIR -name "*.log" -type f -size +2k)
+FILES_TO_DELETE=$(find $SOURCE_DIR -name "*.log" -type f -size +2k)
 
 
 #while loop bcz

@@ -22,6 +22,8 @@ if [ $USERID -ne 0 ]; then
     exit 1 # failure is other than 0
 fi
 
+
+#first create some files ending with .log in source dir etc user.log pay.log 
 USAGE(){
     echo -e "$R USAGE:: sudo sh 24-backup.sh <SOURCE_DIR> <DEST_DIR> <DAYS>[optional, default 14 days] $N"
     exit 1

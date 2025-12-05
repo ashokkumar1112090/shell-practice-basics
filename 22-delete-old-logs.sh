@@ -11,6 +11,7 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log" #means /var/log/shell-practice/16-logs.
 mkdir -p $LOGS_FOLDER
 echo "script start executed at: $(date)" | tee -a $LOG_FILE  # echo printed one to APPEND in log file
 
+#first create user.log pay.log files to delete in app-logs directory
 SOURCE_DIR=/home/ec2-user/app-logs
 
 if [ ! -d $SOURCE_DIR ]; then                #directory = d

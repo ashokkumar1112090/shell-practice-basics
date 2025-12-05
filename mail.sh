@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-{TO_ADDRESS=$1
+TO_ADDRESS=$1
 SUBJECT=$2
 ALERT_TYPE=$3
 MESSAGE_BODY=$4

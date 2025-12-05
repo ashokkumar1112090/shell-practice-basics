@@ -5,7 +5,7 @@ set -e
 #     echo "There is an error in $LINENO, Command is: $BASH_COMMAND" 
 # }
 
-trap 'echo "There is an error in $LINENO, Command is: $BASH_COMMAND"' ERR #lineno bashcmd are spec varb
+trap 'echo "There is an error in $LINENO, Command is: $BASH_COMMAND"' ERR #lineno bashcmd are spec var
 #to know the error occured in which line or which cmd we use
 #There is an error in 15,Command is: ccaffjl like this result appears
 

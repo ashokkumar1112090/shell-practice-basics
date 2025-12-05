@@ -6,12 +6,13 @@ IP_ADDRESS=$(curl -s http://169.254.169.254/latest/meta-data/local-ipv4) #google
 # -s uses silent output and dont show in result
 MESSAGE=""
 
+#output needed line by line so we use loop
 while IFS= read -r line
 do
     USAGE=$(echo $line | awk '{print $6}' | cut -d "%" -f1) #usage 6th row so $6 & "%" not needed so cut
     PARTITION=$(echo $line | awk '{print $7}')
     if [ $USAGE -ge $DISK_THRESHOLD ]; then
-        MESSAGE+="High Disk usage on $PARTITION: $USAGE % <br>" # escaping   + appends
+        MESSAGE+="High Disk usage on $PARTITION: $USAGE % <br>" # escaping   + appends  /n new line for linux <br> for new line in html
     fi
 done <<< $DISK_USAGE
 

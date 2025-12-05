@@ -55,7 +55,9 @@ if [ ! -z "${FILES}" ]; then  # -z check empty or not
     TIMESTAMP=$(date +%F-%H-%M)
     ZIP_FILE_NAME="$DEST_DIR/app-logs-$TIMESTAMP.zip"
     echo "Zip file name: $ZIP_FILE_NAME"
-    find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME" #all args @ #-type f -mtime +$DAYS
+    echo "$FILES" | zip -@ -j "$ZIP_FILE_NAME"
+
+    #find $SOURCE_DIR -name "*.log" -type f -mtime +$DAYS | zip -@ -j "$ZIP_FILE_NAME" #all args @ #-type f -mtime +$DAYS
     #if -j given it takes file name otherwise it takes full path
 
     ### Check Archieval Success or not ###
